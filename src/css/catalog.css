@@ -1,7 +1,7 @@
 
 .catalog {
     padding-top:60;
-    
+    padding-bottom: 60px;
 }
   
   .catalog-title {
@@ -103,6 +103,7 @@
     
       .catalog {
         padding-top: 80px;
+        padding-bottom: 80px;
       }
 
       .catalog-img {
@@ -161,7 +162,7 @@
       
         .catalog {
             padding-top: 100px;
-            
+            padding-bottom: 100px;
           }
           .catalog-img {
             min-width: 304px;
