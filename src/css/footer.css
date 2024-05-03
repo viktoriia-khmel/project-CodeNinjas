@@ -3,8 +3,9 @@
   max-height: 581px;
   background: #0c0c0c;
   border-radius: 30px;
+  margin: 0 auto;
 }
-.conteiner {
+.footer-container {
   padding: 40px 28px 28px 28px;
 }
 
@@ -56,16 +57,18 @@
 
 .footer-menu-address {
   display: flex;
-  justify-content: flex-end;
   gap: 49px;
+  margin-bottom: 48px;
 }
 
 .footer-menu {
   width: 147px;
-  display: flex;
-  flex-direction: row;
 }
+
 .footer-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px 16px;
 }
 .footer-menu-item {
   font-weight: 500;
@@ -79,9 +82,11 @@
   font-size: 12px;
   line-height: 1.33;
   color: #fbfbfb;
-  width: 83px;
+  max-width: 83px;
+  margin-left: auto;
 }
 .footer-text {
+  margin-bottom: 8px;
 }
 
 .footer-text-item {
@@ -94,6 +99,8 @@
 }
 
 .footer-link {
+  display: flex;
+  gap: 20px;
 }
 
 .footer-link-text {
@@ -103,4 +110,7 @@
   letter-spacing: -0.02em;
   text-align: right;
   color: rgba(251, 251, 251, 0.5);
+}
+
+@media screen {
 }
