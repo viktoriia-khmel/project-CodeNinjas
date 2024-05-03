@@ -1,7 +1,7 @@
 
 .catalog {
     padding-top:60;
-    width: 100%;
+    
 }
   
   .catalog-title {
@@ -31,20 +31,20 @@
   }
 
 
-
-
    .mob {
     display: none;
   }
 
 
 
+
   .catalog-img {
     margin-bottom: 10px;
-    width: 279px;
+
   }
   
   
+
   
   .catalog-subtitle {
     font-family: "Gilroy", sans-serif;
@@ -54,7 +54,11 @@
     letter-spacing: -0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    width: 100%;
   }
+
+
+
   .catalog-text {
     font-family: "Gilroy", sans-serif;
   font-weight: 400;
@@ -120,17 +124,21 @@
 
      .catalog-items{ 
       padding: 24px 32px;
-      min-width: 344px;
+      max-width: 344px;
     }
   
      .catalog-items:not(:first-child){
       margin-top: 0;
      }
 
+    
+ 
+    .hidden-text {
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
 
-     .catalog-subtitle span {
-      display: none;
-    }
+     }
 
 
     .mob{
