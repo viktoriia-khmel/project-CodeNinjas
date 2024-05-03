@@ -128,10 +128,18 @@
      }
 
 
+     .catalog-subtitle span {
+      display: none;
+    }
+
+
     .mob{
         display: block;
       }
   
+      
+
+
       .catalog-button {
         display: none;
       }
