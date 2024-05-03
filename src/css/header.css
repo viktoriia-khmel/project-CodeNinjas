@@ -1,1 +1,142 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*********************************MOBILE STYLE*************************/
+
+/*********************************TABLET STYLE*************************/
+
+/*********************************DESKTOP STYLE************************/
+
+
+
+
+/* **********HEADER*****************/
+.page-header {
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(12, 12, 12, .1);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 65px;
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 203px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+
+}
+
+.current {
+    position: relative;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -15px;
+    background-color: #3350e9;
+    
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+
+
+}
+
+.menu-link {
+
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #0c0c0c;
+
+}
+.header-social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid;
+    border-color: rgba(12, 12, 12, .1);
+    border-radius: 10px;
+    fill: #0c0c0c;
+}
+
+.header-social-list-link:hover,
+.header-social-list-link:focus {
+    fill: #3350E9;
+    border-color: rgba(51, 80, 233, 0.1);
+
+}
+
+/**********************************MOBILE MENU**************************************/
 
