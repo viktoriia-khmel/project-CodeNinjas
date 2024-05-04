@@ -1,4 +1,8 @@
 /* Reset styles */
+
+
+@import url(./stylesheet.css);
+
 body {
   font-family: 'Gilroy', sans-serif;
   background-color: #fbfbfb;
