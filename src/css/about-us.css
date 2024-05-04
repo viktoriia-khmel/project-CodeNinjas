@@ -12,7 +12,6 @@
 .flex-container {
     padding: 0px 20px;
     width: 375px;
-    height: 912px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -74,12 +73,14 @@
 
 .image-about {
     margin-top: 20px;
-    border-radius: 30px;
     width: 335px;
     height: 446px;
     background: rgba(12, 12, 12, 0.2), url(path_to_image);
 }
 
+.about-img {
+    border-radius: 30px;
+}
 
 
 /* Медиа-запрос для разрешения 768px */
@@ -88,7 +89,6 @@
     .about {
         padding: 0px 32px;
         width: 768px;
-        height: 1064px;
     }
 
     .flex-container {
@@ -139,7 +139,6 @@
     .about {
         padding: 0px 65px;
         width: 1280px;
-        height: 532px;
     }
 
     .flex-container {
@@ -153,7 +152,6 @@
     .content-about {
         border-radius: 50px;
         width: 580px;
-        height: 532px;
     }
 
     .last-paragraph {
@@ -163,7 +161,6 @@
     .image-about {
         border-radius: 50px;
         width: 530px;
-        height: 532px;
         margin: 0;
     }
 }
