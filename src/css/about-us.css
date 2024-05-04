@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .about-us {
@@ -141,10 +140,6 @@
         padding: 0px 65px;
         width: 1280px;
         height: 532px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .flex-container {
