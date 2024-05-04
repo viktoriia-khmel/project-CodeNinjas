@@ -1,4 +1,4 @@
-.wrapper-sale {
+.container-sale {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 80px;
     background-color: #F3F3F3;
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 16px;
@@ -17,28 +16,34 @@
 
 .img-watch {
     width: 52px;
-    height: auto;
 }
 
 .big-img-watch {
     width: 235px;
-    height: auto;
 }
 
 .container-watch-img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .small-watches-container {
     display: flex;
     gap: 5px;
+    flex-shrink: 0;
+}
+
+.big-watch-container {
+    flex-grow: 1;
+    display: flex;
 }
 
 .big-watch {
     padding: 50px;
-    max-width: 335px;
+    width: 100%;
 }
 
 .name-title {
@@ -57,37 +62,34 @@
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -0.02em;
-    /* text-align: left; */
     margin-bottom: 10px;
 }
 
 .product-tag {
     color: #FBFBFB80;
-    font-family: Gilroy;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.02em;
-    /* margin-bottom: 20px; */
-
 }
 
 .wrapper-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     max-width: 68px;
     background-color: #FBFBFB1A;
     border-radius: 8px;
     padding: 8px 12px;
-    font-family: Gilroy;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.02em;
-   
 }
 
 .tag-line-through {
     text-decoration: line-through;
-    font-family: Gilroy;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -104,14 +106,14 @@
 }
 
 .main-text {
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 18px;
-   letter-spacing: -0.02em;
-   text-align: left;
-   color: rgba(251, 251, 251, 0.7);
-   margin-top: 28px;
-   margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(251, 251, 251, 0.7);
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 
 .container-tags-option {
@@ -129,7 +131,7 @@
 }
 
 .item-text-tag {
-    font-family: Gilroy;
+    /* font-family: Gilroy; */
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -139,7 +141,8 @@
 
 @media screen and (min-width: 768px) {
     .container-watch-img {
-        flex-direction: row;         
+        flex-direction: row;
+        gap: 40px;
     }
 
     .small-watches-container {
@@ -147,36 +150,47 @@
         gap: 10px;
     }
 
-    .background-watch {
-        max-width: 132px;
-    }
-
     .img-watch {
         width: 96px;
-        /* height: auto; */
-    }
-
-    .big-watch {
-        min-width: 552px;
-        height: 100%;
-
     }
 
     .big-img-watch {
         width: 328px;
-        /* height: auto; */
-    }
-
-    .big-watch-container {
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .blue-wrapper {
-        margin-top: 40px;
+        padding: 60px;
     }
 
+    .name-description {
+        font-size: 32px;
+        line-height: 36px;
+        max-width: 436px;
+    }
 
+    .wrapper-tag {
+        max-width: 78px;
+    }
 
+    .main-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .item-text-tag {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .container-tags-option {
+        max-width: 398px;
+    }
+}
+
+    @media screen and (min-width: 1280px) {
+        .container-sale {
+            flex-direction: row;
+            gap: 40px;
+        }
 
 }
