@@ -114,15 +114,14 @@
       }
   
       .catalog-list {
-        display: flex;
-        flex-wrap: wrap;
         gap: 32px 16px;
       }
 
 
      .catalog-items{ 
+      width: calc((100% - 16px) / 2);
       padding: 24px 32px;
-      max-width: 344px;
+      
     }
   
      .catalog-items:not(:first-child){
@@ -167,12 +166,12 @@
 
         .catalog-list {
           
-          justify-content: space-between;
           gap: 32px 23px;
           }
 
         .catalog-items{ 
-          width: 368px;
+          width: calc((100% - 2 * 23px) / 3);
+        
           }
 
   }
