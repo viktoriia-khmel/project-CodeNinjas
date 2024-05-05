@@ -210,13 +210,15 @@ button {
       top: 0;
       left: 0;
       z-index: 999999999;
-      width: 100%;
+      /* width: 100%; */
+      pointer-events: none;
+      min-width: 200px;
       height: 100%;
-      background-color: rgba(12, 12, 12, 0.92);
+      /* background-color: rgba(12, 12, 12, 0.92);
       background-image: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("../img/mobile-menu-bg/mobile-bg.jpg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; */
 
       opacity: 0;
       visibility: hidden;
@@ -225,12 +227,15 @@ button {
     }
   
     .mobile-menu.is-open {
+      pointer-events: auto;
       opacity: 1;
       visibility: visible;
     }
   
     .mobile-menu-container {
-      position: relative;
+      position: absolute;
+      justify-content: space-between;
+      /* position: relative; */
       display: flex;
       flex-direction: column;
       /* max-width: 320px;  */
@@ -238,6 +243,12 @@ button {
       height: 100%;
       margin-left: auto;
       margin-right: auto;
+
+      background-color: rgba(12, 12, 12, 0.92);
+        background-image: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("../img/mobile-menu-bg/mobile-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
   
   
@@ -258,7 +269,8 @@ button {
   
     .mobile-page-nav-menu {
       margin-top: auto;
-      margin-bottom: auto;
+      margin-bottom: auto; 
+      
     }
   
     .mobile-nav-menu {
@@ -285,7 +297,7 @@ button {
       justify-content: center;
       align-items: center;
       gap: 10px;
-      padding-bottom: 40px;
+      /* padding-bottom: 40px; */
     }
   
     .mobile-socialmedia-list-link {
