@@ -216,10 +216,10 @@ button {
 
 }
 
-.mobile-menu .is-open {
+/* .mobile-menu .is-open {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .mobile-menu-container{
     position: relative;
