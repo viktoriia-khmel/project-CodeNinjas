@@ -30,6 +30,7 @@ margin-bottom: 28px;
 }
 .form-input {
     width: 100%;
+    height: 42px;
     padding: 12px 14px;
     border: 1px solid rgba(12, 12, 12, 0.15);
     border-radius: 12px;
@@ -48,7 +49,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #0c0c0c;
 }
 .form-input.comment {
-    margin-bottom: 28px;
     min-height: 84px;
 }
 .input-container {
@@ -57,21 +57,20 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 18px;
 }
 .form-btn {
-    cursor: pointer;
     font-weight: 500;
 font-size: 14px;
 color: #fbfbfb;
 line-height: 1.29;
 background: #3350e9;
-min-width: 160px;
-height: 52px;
 border: none;
 border-radius: 16px;
-padding: 17px 63px;
+padding: 12px 50px;
+width: 134px;
+height: 42px;
 display: block;
 align-items: center;
 justify-content: center;
-margin: 0;
+margin: 28px 0 0;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn:hover {
@@ -111,13 +110,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding: 16px;
         font-size: 16px;
         line-height: 1.25;
+        height: 52px;
     }
     .form-input.comment {
-        margin-bottom: 32px;
         min-height: 90px;
     }
     .image-container {
         border-radius: 50px;
+    }
+    .form-btn {
+        margin-top: 32px;
+        min-width: 160px;
+        height: 52px;
+        padding: 17px 63px;
     }
 
 }
