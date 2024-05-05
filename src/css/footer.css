@@ -1,7 +1,9 @@
 .footer {
   padding-bottom: 20px;
 }
-
+.footer.container {
+  padding-top: 30px;
+}
 .footer-cont {
   border-radius: 30px;
   background: #0c0c0c;
@@ -27,11 +29,12 @@
   color: #fbfbfb;
 }
 .footer-section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .footer-soc-list {
   display: flex;
   gap: 10px;
+  max-width: 122px;
 }
 .footer-soc-item {
 }
@@ -58,16 +61,18 @@
   text-align: center;
   color: #fbfbfb;
   padding: 14px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 16px;
   max-width: 152px;
-
+  text-wrap: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer-slogan {
+  display: flex;
+  justify-content: center;
   margin-bottom: 92px;
 }
 .footer-slogan-text {
@@ -133,12 +138,23 @@
   text-align: right;
   color: rgba(251, 251, 251, 0.5);
 }
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-slogan {
+  order: 3;
+}
 
 @media (min-width: 768px) {
   .footer {
     padding-bottom: 32px;
   }
-
+  .footer.container {
+    padding-top: 40px;
+  }
   .footer-cont {
     padding: 40px 40px 28px 40px;
   }
@@ -146,12 +162,13 @@
   .footer-logo-text {
     font-size: 20px;
   }
-
-  .footer-section {
-    margin-bottom: 86px;
+.footer-wrap {
+  flex-direction: row;
+}
+  /* .footer-section {
     display: flex;
     flex-direction: row;
-  }
+  } */
 
   .footer-logo-soc {
     display: flex;
@@ -173,7 +190,7 @@
   .footer-slogan-text {
     font-size: 28px;
     line-height: 1.14;
-    min-width: 524px;
+    max-width: 524px;
   }
   .footer-slogan {
     margin-bottom: 100px;
@@ -214,5 +231,30 @@
   .footer-link-text {
     font-size: 14px;
     line-height: 1.28;
+  }
+  .footer-soc-list {
+    max-width: 128px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer.container {
+    padding-top: 50px;
+  }
+  .footer-wrap {
+    justify-content: space-between;
+  }
+  .footer-tel {
+    order: 3;
+    margin: 0;
+  }
+  .footer-slogan {
+    order: 2;
+    margin-bottom: 126px;
+  }
+  .footer-text{
+    justify-content: space-between;
+  }
+  .footer-address {
+    max-width: 162px;
   }
 }
