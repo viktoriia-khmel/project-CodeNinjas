@@ -56,7 +56,7 @@
 
 
 
-  .catalog-text {
+  .catalog-price {
     font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -128,7 +128,9 @@
       margin-top: 0;
      }
 
-    
+     .catalog-subtitle {
+      font-size: 20px;
+     }
  
     .hidden-text {
      white-space: nowrap;
@@ -171,7 +173,9 @@
 
         .catalog-items{ 
           width: calc((100% - 2 * 23px) / 3);
-        
+          
           }
-
+.catalog-subtitle {
+  width: 304px;
+}
   }
