@@ -35,6 +35,7 @@
 .rev-list-wrap {
 }
 .rev-item {
+  max-width: 335px;
   padding: 32px 36px;
 
   border-radius: 30px;
@@ -72,17 +73,13 @@
 
   text-align: center;
 }
-.rev-item-second {
+.rev-item.rev-item-second {
   display: none;
 }
-.rev-item-third {
+.rev-itemrev-item-third {
   display: none;  
 }
 
-/* Приховати третій елемент */
-/* .rev-item:nth-child(3) {
-    display: none; 
-  } */
 
 /* tablet */
 
@@ -94,44 +91,36 @@
     /* .container */
     max-width: 768px;
     padding: 0 32px;
-  }
-  /* .container {
-    max-width: 768px;
-    padding: 0 32px;
-  } */
+  }  
   .reviews-title {
     font-weight: 600;
     font-size: 48px;
     line-height: 0.91667;
-  }
-  /* .title {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 0.91667;
-  } */
+  }  
   .rev-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .rev-item {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    max-width: 344px;
     width: calc((100% - 16px) / 2);
-
   }
   .rev-item-second {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: block;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
     margin-left: 16px;
-    width: calc((100% - 16px) / 2);
+    /* width: calc((100% - 16px) / 2); */
 
   }
     
   .rev-subtitle {
+    font-size: 18px;
+    line-height: 1.1;
+    
   }
   .rev-text {
       max-width: 272px;
@@ -155,30 +144,43 @@
   }
   .rev-list {
   }
+  
 
-
-  /* Зробити видимим третій елемент */
-  /* .rev-item:nth-child(3) {
-    display: block; 
+  .rev-item {
+    /* display: flex; */
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 16px;
+    max-width: 370px;
+
+    margin-left: 20px;
     width: calc((100% - 20px) / 3);
-  } */
-  .rev-item {
-    display: flex;
-    /* flex-wrap: wrap; */
+  }
+
+  .rev-item.rev-item-first,
+  .rev-item.rev-item-second,
+  .rev-item.rev-item-third {
+    display: block;
+    
+    flex-wrap: wrap;
     flex-direction: row;
     /* margin-left: 20px; */
     width: calc((100% - 20px) / 3);
   }
-  .rev-item-third {
+
+  .rev-item.rev-item-second,
+  .rev-item.rev-item-third {
+   
+    margin-left: 20px;
+  }
+  /* .rev-item-third {
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: 20px;
     width: calc((100% - 20px) / 3);
-  }
+  } */
+
+  
   .rev-list-wrap {
   }
   .team-member-photo {
