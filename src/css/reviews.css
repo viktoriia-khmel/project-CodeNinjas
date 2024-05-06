@@ -4,8 +4,13 @@
 .reviews {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
+
+.section-reviews {
+  padding-bottom: 60px;
+}
+
 .reviews-content {
   display: block;
 
@@ -14,9 +19,9 @@
   margin: 0 auto;
 }
 
-.reviews-title {
+/* .reviews-title {
   margin-top: 60px;
-}
+} */
 
 .title {
   font-weight: 600;
@@ -38,7 +43,7 @@
 
   border-radius: 30px;
   background-color: #f3f3f3;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .team-member-photo {
@@ -82,12 +87,15 @@
   display: none;
 }
 
-
 /* tablet */
 
 @media screen and (min-width: 768px) {
   .reviews {
     width: 100%;
+  }
+
+  .section-reviews {
+    padding-bottom: 80px;
   }
 
   .reviews-content {
@@ -117,7 +125,7 @@
 
   .rev-item.rev-item-second {
     display: block;
-    }
+  }
 
   .rev-subtitle {
     font-size: 18px;
@@ -126,19 +134,24 @@
 
   .rev-text {
     max-width: 272px;
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
 /* desktop */
 
 @media screen and (min-width: 1280px) {
+  .section-reviews {
+    padding-bottom: 100px;
+  }
   .reviews-content {
   }
   .container {
     max-width: 1280px;
     padding: 0 65px;
   }
-  
+
   .rev-list {
     display: flex;
     flex-direction: row;
@@ -157,5 +170,5 @@
 
   .rev-text {
     max-width: 298px;
-  }  
+  }
 }
