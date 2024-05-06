@@ -91,12 +91,11 @@
   border-bottom: solid 1px rgba(251, 251, 251, 0.1);
 }
 
-
 .footer-menu-list {
   display: flex;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-    width: 147px;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  width: 147px;
 }
 .footer-menu-item {
   font-weight: 500;
@@ -214,7 +213,7 @@
   .footer-address {
     width: 162px;
   }
-  
+
   .footer-address-text {
     font-size: 14px;
     line-height: 1.28;
@@ -238,7 +237,7 @@
 }
 
 @media (min-width: 1280px) {
-  .container {
+  .footer.container {
     padding: 0 32px;
   }
 
@@ -257,8 +256,6 @@
     margin-bottom: 0;
   }
 
-  
-
   .footer-menu-list {
     gap: 40px;
     width: 505px;
@@ -267,7 +264,6 @@
   .footer-address {
     width: 162px;
   }
-
 
   .footer-link {
     margin-left: auto;
