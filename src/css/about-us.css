@@ -47,16 +47,20 @@
 }
 
 .about-button {
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    cursor: pointer;
-    background-color: #3350E9;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 129%;
-    text-align: center;
-    border: none;
+    display: inline-block;
+        padding: 12px 24px;
+        background-color: #3350E9;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 16px;
+        width: 160px;
+        height: 48px;
+        cursor: pointer;
 }
 
 .about-button a {
