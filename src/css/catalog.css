@@ -44,20 +44,17 @@
 
   
   .catalog-subtitle {
-    font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 125%;
     letter-spacing: -0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    width: 100%;
   }
 
 
 
   .catalog-price {
-    font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
@@ -128,8 +125,13 @@
       margin-top: 0;
      }
 
+     .catalog-box {
+      width: 280px;
+     }
+
      .catalog-subtitle {
       font-size: 20px;
+      line-height: 100%;
      }
  
     .hidden-text {
@@ -138,7 +140,7 @@
      text-overflow: ellipsis;
 
      }
-
+     
 
     .mob{
         display: block;
@@ -175,7 +177,7 @@
           width: calc((100% - 2 * 23px) / 3);
           
           }
-.catalog-subtitle {
-  width: 304px;
-}
+          .catalog-box {
+            width: 304px;
+          }
   }
