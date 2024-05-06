@@ -38,6 +38,7 @@
   display: flex;
   gap: 5px;
   flex-shrink: 0;
+  justify-content: space-between;
 }
 
 .big-watch-container {
