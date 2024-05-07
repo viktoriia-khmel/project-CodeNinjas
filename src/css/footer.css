@@ -51,6 +51,11 @@
   height: 18px;
 }
 
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  fill: #fbfbfb;
+}
+
 .footer-phone {
   margin-bottom: 40px;
 }
