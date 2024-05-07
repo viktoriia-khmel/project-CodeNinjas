@@ -35,6 +35,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('../fonts/Gilroy-Bold.eot') format('embedded-opentype'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
