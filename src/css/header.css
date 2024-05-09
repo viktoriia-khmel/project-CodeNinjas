@@ -64,6 +64,9 @@ button {
 }
 
 .page-header {
+  position: fixed;
+  background-color: #fbfbfb;
+  width: 100%;
   padding: 26px 0;
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
  
@@ -118,19 +121,29 @@ button {
 
 .current {
   position: relative;
+  
 }
 
 .current::after {
   content: '';
   position: absolute;
-  left: 15px;
+  display: flex;
+  text-align: center;
+  
+  /* left: 15px; */
   bottom: -15px;
-  background-color: #3350e9;
+  left: 40%;
 
+  background-color: #3350e9;
+  
+  visibility: hidden;
   width: 9px;
   height: 9px;
   border-radius: 100%;
 }
+
+
+
 
 .menu-link {
   font-family: 'Gilroy', sans-serif;
@@ -140,6 +153,20 @@ button {
   text-align: center;
   color: #0c0c0c;
 }
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #3350e9;
+  
+}
+
+.current:hover::after,
+.current:focus::after {
+  visibility: visible;
+}
+
+
+
 
 .header-social-list {
   display: none;
@@ -208,7 +235,8 @@ button {
   .mobile-menu {
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
+      /* left: 0; */
       z-index: 999999999;
       /* width: 100%; */
       pointer-events: none;
@@ -306,11 +334,20 @@ button {
       align-items: center;
       border-radius: 10px;
       fill: #fbfbfb;
+      opacity: 0.8;
       border: 1px solid rgba(251, 251, 251, 0.1);
       padding: 8px;
       width: 34px;
       height: 34px;
     }
+
+        .mobile-socialmedia-list-link:hover,
+        .mobile-socialmedia-list-link:focus {
+          fill: #fbfbfb;
+          opacity: 1;
+        }
+
+
 
 
 
@@ -335,7 +372,8 @@ button {
 
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
+      /* left: 0; */
       z-index: 999999999;
       display: flex;
       justify-content: center;
@@ -434,10 +472,19 @@ button {
                   align-items: center;
                   border-radius: 10px;
                   fill: #fbfbfb;
+                  opacity: 0.8;
                   border: 1px solid rgba(251, 251, 251, 0.1);
                   padding: 8px;
                   width: 34px;
                   height: 34px;
+                }
+
+                .mobile-socialmedia-list-link:hover,
+                .mobile-socialmedia-list-link:focus {
+                  fill: #fbfbfb;
+                    opacity: 1;
+
+
                 }
 
 
