@@ -1,3 +1,7 @@
+.footer.container {
+  padding: 30px 20px 20px 20px;
+}
+
 .footer {
   padding-bottom: 20px;
 }
@@ -148,6 +152,10 @@
 }
 
 @media (min-width: 768px) {
+  .footer.container {
+    padding: 60px 32px 32px 32px;
+  }
+
   .footer {
     padding-bottom: 32px;
   }
@@ -245,7 +253,7 @@
 
 @media (min-width: 1280px) {
   .footer.container {
-    padding: 0 32px 32px 32px;
+    padding: 50px 32px 32px 32px;
   }
 
   .footer-section {

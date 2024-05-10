@@ -6,7 +6,8 @@
 }
 
 .about-us {
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .flex-container {
@@ -48,26 +49,24 @@
 }
 
 .about-button {
-
   display: inline-block;
-    background-color: #3350E9;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    cursor: pointer;
-    line-height: 48px;
+  background-color: #3350e9;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  cursor: pointer;
+  line-height: 48px;
 }
 
 .about-button:hover,
 .about-button:focus {
-  background-color: #1F3CD4;
-
+  background-color: #1f3cd4;
 }
 
 .about-button a {
@@ -89,7 +88,8 @@
   .flex-container {
   }
   .about-us {
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .content-about {
     border-radius: 50px;
@@ -135,7 +135,8 @@
   }
 
   .about-us {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .content-about {
