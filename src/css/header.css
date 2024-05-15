@@ -411,7 +411,7 @@ button {
     background-repeat: no-repeat;
   }
 }
-@media (min-wisth: 768px) {
+@media (min-width: 768px) {
   .mobile-menu {
     position: fixed;
     top: 0;
